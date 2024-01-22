@@ -1,0 +1,37 @@
+.list-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-header-container aside {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+
+    line-height: normal;
+}
+
+.list-header-container aside:first-child {
+    color: var(--blue);
+}
+
+.list-header-container aside:last-child {
+    color: var(--purple);
+}
+
+.list-header-container aside span {
+    border-radius: 999px;
+    font-size: 0.75rem;
+    
+    padding: 0.125rem 0.5rem;
+
+    font-size: 0.75rem;
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+}
+
+.list-header-container aside p {
+    font-size: 0.875rem;
+    font-weight: bold;
+}

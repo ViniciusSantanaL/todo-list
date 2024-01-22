@@ -1,0 +1,60 @@
+.task-container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0 rgb(0, 0, 0, 0.25);
+}
+
+.task-container p {
+    display: block;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 0.75rem;
+    user-select: none;
+}
+
+.description {
+    font-size: 0.875rem;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 0.2s all;
+}
+
+.description-checked {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.trash-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 3px;
+    
+    border-radius: 4px;
+    background-color: transparent;
+    border-style: none;
+    
+    color: var(--gray-300);
+
+    transition: all 0.2s;
+}
+
+.trash-button:hover {
+    background-color: var(--gray-400);
+    color: var(--danger);
+}
